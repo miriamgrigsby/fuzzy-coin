@@ -6,7 +6,6 @@ $MIDNIGHT: #354052;
 $LINK: #5c84d3;
 
 .header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +41,7 @@ $LINK: #5c84d3;
 }
 
 body {
-  background-color: pink;
+  background-color: rgb(169, 228, 198);
 }
 
 .ag-root-wrapper.ag-layout-normal.ag-ltr {
