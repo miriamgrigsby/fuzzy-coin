@@ -41,11 +41,11 @@ $LINK: #5c84d3;
 }
 
 body {
-  background-color: rgb(169, 228, 198);
+  background-color: #5ba87a;
 }
 
 .ag-root-wrapper.ag-layout-normal.ag-ltr {
-  margin-top: 50px;
+  margin-top: 25px;
   align-self: center;
 }
 
@@ -54,11 +54,12 @@ body {
 }
 
 .ag-theme-alpine {
-  width: 95vw !important;
-  height: 75vh !important;
+  width: 1140px !important;
+  height: 530px !important;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 .ag-theme-alpine .ag-root-wrapper {
@@ -116,4 +117,24 @@ body {
 .id-link {
   color: $LINK;
   cursor: pointer;
+}
+
+.mainSiteLink {
+  display: flex;
+  width: 225px;
+  margin: auto;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.822);
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.822);
+  }
+  .mainLink {
+    text-decoration: none;
+  }
 }
