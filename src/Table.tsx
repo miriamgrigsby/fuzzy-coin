@@ -33,24 +33,31 @@ const Table: React.FC<Props> = ({ data, onColumnResized }): JSX.Element => {
           },
           columnDefs: [
             {
+              field: 'eip_score',
+              headerName: 'EIP Score',
+              maxWidth: 130,
+              resizable: true,
+              sortable: true,
+            },
+            {
               field: 'tok_name',
               resizable: true,
               sortable: true,
-              maxWidth: 160,
+              maxWidth: 180,
               headerName: 'Token Name',
             },
             {
               field: 'tok_symbol',
               resizable: true,
               sortable: true,
-              maxWidth: 180,
+              maxWidth: 200,
               headerName: 'Token Symbol',
             },
             {
               field: 'init_supply',
               resizable: true,
               sortable: true,
-              maxWidth: 160,
+              maxWidth: 180,
               headerName: 'Initial Supply',
             },
             {
@@ -76,8 +83,9 @@ const Table: React.FC<Props> = ({ data, onColumnResized }): JSX.Element => {
               field: 'dep_time',
               resizable: true,
               sortable: true,
-              maxWidth: 220,
+              maxWidth: 250,
               headerName: 'Deployment Time',
+              sort: 'desc'
             },
           ],
           pagination: true,

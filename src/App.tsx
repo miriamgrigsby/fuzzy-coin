@@ -2,6 +2,9 @@ import React from 'react'
 import './App.scss'
 import Table from './Table'
 import axios from 'axios'
+import { ToastContainer } from 'react-toastify'
+import { triggerToast } from './Modules/toast.module'
+import SkeletonTable from './SkeletonTable'
 
 export const App = () => {
   const [data, setData] = React.useState<any | null>()
@@ -9,16 +12,14 @@ export const App = () => {
   React.useEffect(() => {
     const fetch = async () => {
       try {
-        const fetchedData: any = await axios.get(
-          'https://fuzzy-inu-coin.herokuapp.com/api/tokens/'
-        )
+        const fetchedData: any = await axios.get('https://fuzzy-inu-coin.herokuapp.com/api/tokens/')
         const receivedData: any = fetchedData.data
         setData(receivedData)
       } catch (error) {
         setData(null)
-        // triggerToast({
-        //   description: 'Failed to load data',
-        // })
+        triggerToast({
+          description: 'Failed to load data',
+        })
       }
     }
     fetch()
@@ -26,6 +27,7 @@ export const App = () => {
 
   return (
     <>
+      <ToastContainer />
       <header className={'header'}>
         <span className={'title'}>Fuzzy Inu</span>
         <nav className={'headerNavigationContainer'}>
@@ -37,7 +39,8 @@ export const App = () => {
           <button className={'headerNavigationButton'}>Whitepaper</button>
         </nav>
       </header>
-      <Table data={data}/>
+      {/* {data ? <SkeletonTable /> : <Table data={data} />} */}
+      {data ? <Table data={data} /> : <SkeletonTable />}
     </>
   )
 }
