@@ -19,6 +19,10 @@ interface Props extends AgGridReactProps {
 }
 
 const Table: React.FC<Props> = ({ data, onColumnResized }): JSX.Element => {
+  data.map((token: any) => {
+    const tokenSupply = Number(token.init_supply)
+    token.init_supply = tokenSupply.toExponential(2)
+  })
   return (
     <div className="ag-theme-alpine">
       <AgGridReact

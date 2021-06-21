@@ -16,7 +16,13 @@ $LINK: #5c84d3;
 .title {
   font-family: 'Pacifico', cursive;
   font-size: 40px;
+  margin-left: 0.5rem;
+}
+
+.titleContainer {
+  display: flex;
   margin-left: 100px;
+  align-items: center;
 }
 
 .headerNavigationContainer {
@@ -54,8 +60,8 @@ body {
 }
 
 .ag-theme-alpine {
-  width: 95vw!important;
-  height: 530px !important;
+  width: 95vw !important;
+  height: 80vh !important;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
@@ -121,12 +127,13 @@ body {
 
 .mainSiteLink {
   display: flex;
-  width: 225px;
-  margin: auto;
-  height: 40px;
+  width: 200px;
+  height: 50%;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
+  border: none;
+  background: none;
   box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.822);
   cursor: pointer;
   outline: none;
@@ -137,4 +144,12 @@ body {
   .mainLink {
     text-decoration: none;
   }
+}
+
+.fuzzyInuLogo {
+  height: 60px;
+  width: 60px;
+  background-image: url('./fuzzy-inu-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

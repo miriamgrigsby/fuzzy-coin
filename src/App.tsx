@@ -29,7 +29,10 @@ export const App = () => {
     <>
       <ToastContainer />
       <header className={'header'}>
-        <span className={'title'}>Fuzzy Tools</span>
+        <div className="titleContainer">
+          <div className="fuzzyInuLogo"></div>
+          <span className={'title'}>Fuzzy Tools</span>
+        </div>
         <nav className={'headerNavigationContainer'}>
           <button className={'headerNavigationButton'}>Roadmap</button>
           <button className={'headerNavigationButton'}>How To Buy</button>
@@ -37,12 +40,14 @@ export const App = () => {
           <button className={'headerNavigationButton'}>Mentions</button>
           <button className={'headerNavigationButton'}>Tools</button>
           <button className={'headerNavigationButton'}>Whitepaper</button>
+          <button className="mainSiteLink">
+            <a href="https://fuzzy.finance" className="mainLink">
+              https://fuzzy.finance
+            </a>
+          </button>
         </nav>
       </header>
       {data ? <Table data={data} /> : <SkeletonTable />}
-      <div className="mainSiteLink">
-        <a href="https://fuzzy.finance" className="mainLink">https://fuzzy.finance</a>
-      </div>
     </>
   )
 }

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fuzzy-coin"
+    "default": "fuzzy-coin",
+    "main": "fuzzy-inu-tools"
   }
 }
