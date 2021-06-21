@@ -42,7 +42,7 @@ export const App = () => {
           <button className={'headerNavigationButton'}>Whitepaper</button>
           <button className="mainSiteLink">
             <a href="https://fuzzy.finance" className="mainLink">
-              https://fuzzy.finance
+              Website
             </a>
           </button>
         </nav>
