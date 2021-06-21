@@ -34,20 +34,42 @@ export const App = () => {
           <span className={'title'}>Fuzzy Tools</span>
         </div>
         <nav className={'headerNavigationContainer'}>
-          <button className={'headerNavigationButton'}>Roadmap</button>
-          <button className={'headerNavigationButton'}>How To Buy</button>
-          <button className={'headerNavigationButton'}>About</button>
-          <button className={'headerNavigationButton'}>Mentions</button>
-          <button className={'headerNavigationButton'}>Tools</button>
-          <button className={'headerNavigationButton'}>Whitepaper</button>
           <button className="mainSiteLink">
             <a href="https://fuzzy.finance" className="mainLink">
               Website
             </a>
           </button>
+          <button className="mainSiteLink">
+            <a href="https://fuzzyinu.medium.com/" className="mainLink">
+              Terminology
+            </a>
+          </button>
+          <button className="mainSiteLink">
+            <a href="https://t.me/fuzzyinu" className="mainLink">
+              Telegram
+            </a>
+          </button>
+          <button className="mainSiteLink">
+            <a href="http://dextools.io/app/uniswap/pair-explorer/0x513f6bb1d10b06315cf130e452fcc7da51a9318f" className="mainLink">
+              Chart
+            </a>
+          </button>
+          <button className="mainSiteLink">
+            <a href="https://fuzzy.finance/whitepaper" className="mainLink">
+              Whitepaper
+            </a>
+          </button>
         </nav>
       </header>
       {data ? <Table data={data} /> : <SkeletonTable />}
+      <p className="disclaimer">
+        <small>
+          This product does not guarantee safe tokens. Always do your own research before investing.
+        </small>
+      </p>
+      <p className="disclaimer">
+        <small>The Fuzzy Inu Token Project. 2021.</small>
+      </p>
     </>
   )
 }

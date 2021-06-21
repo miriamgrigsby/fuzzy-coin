@@ -10,7 +10,8 @@ $LINK: #5c84d3;
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  width: 100vw;
+  width: 95vw;
+  margin: auto;
 }
 
 .title {
@@ -21,37 +22,25 @@ $LINK: #5c84d3;
 
 .titleContainer {
   display: flex;
-  margin-left: 100px;
+  margin-left: 60px;
   align-items: center;
 }
 
 .headerNavigationContainer {
   height: inherit;
-  width: 50rem;
+  width: 48rem;
   display: flex;
   align-items: center;
-  padding-right: 5px;
-  margin-right: 50px;
-}
-
-.headerNavigationButton {
-  width: 100px;
-  height: 50%;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  background: none;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.822);
-  }
+  justify-content: space-between;
 }
 
 body {
   background-color: #5ba87a;
+  text-align: center;
 }
 
 .ag-root-wrapper.ag-layout-normal.ag-ltr {
-  margin-top: 25px;
+  margin-top: 20px;
   align-self: center;
 }
 
@@ -61,11 +50,11 @@ body {
 
 .ag-theme-alpine {
   width: 95vw !important;
-  height: 80vh !important;
+  height: 79vh !important;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .ag-theme-alpine .ag-root-wrapper {
@@ -127,7 +116,8 @@ body {
 
 .mainSiteLink {
   display: flex;
-  width: 125px;
+  color: black;
+  width: 140px;
   height: 50%;
   justify-content: center;
   align-items: center;
@@ -152,4 +142,9 @@ body {
   background-image: url('./fuzzy-inu-logo.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.disclaimer {
+  color: rgb(83, 82, 82);
+  margin: unset;
 }
