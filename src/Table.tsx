@@ -83,7 +83,7 @@ const Table: React.FC<Props> = ({ data, onColumnResized }): JSX.Element => {
               maxWidth: 280,
               headerName: 'Deployment Time',
               sort: 'desc',
-              sortIndex: 2,
+              sortIndex: 1,
             },
             {
               field: 'eip_score',
@@ -91,8 +91,6 @@ const Table: React.FC<Props> = ({ data, onColumnResized }): JSX.Element => {
               maxWidth: 190,
               resizable: true,
               sortable: true,
-              sort: 'desc',
-              sortIndex: 1,
             },
           ],
           pagination: true,

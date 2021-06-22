@@ -110,6 +110,10 @@ body {
   word-break: break-word;
 }
 
+.ag-header-cell-label .ag-header-icon.ag-sort-order {
+  display: none;
+}
+
 .id-link {
   color: $LINK;
   cursor: pointer;
