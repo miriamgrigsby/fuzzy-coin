@@ -16,8 +16,9 @@ $LINK: #5c84d3;
 
 .title {
   font-family: 'Pacifico', cursive;
-  font-size: 40px;
+  font-size: 45px;
   margin-left: 0.5rem;
+  // color: white;
 }
 
 .titleContainer {
@@ -35,7 +36,7 @@ $LINK: #5c84d3;
 }
 
 body {
-  background-color: #5ba87a;
+  background-color: #346751;
   text-align: center;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .ag-header-viewport {
-  background: $DAWN;
+  background: #c84b31;
   font-size: 20px;
 }
 
@@ -72,7 +73,7 @@ body {
 }
 
 .ag-header-cell-text {
-  color: $MIDNIGHT;
+  color: #161616;
 }
 
 .ag-header-cell {
@@ -116,7 +117,7 @@ body {
 
 .mainSiteLink {
   display: flex;
-  color: black;
+  color: #161616;
   width: 140px;
   height: 50%;
   justify-content: center;
@@ -124,17 +125,16 @@ body {
   border-radius: 0.5rem;
   border: none;
   background: none;
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.822);
+  box-shadow: 0px 0px 8px #ecdbba;
   cursor: pointer;
   outline: none;
   font-size: 20px;
   &:hover {
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: #ecdbba;
   }
   .mainLink {
     text-decoration: none;
   }
-  
 }
 
 .fuzzyInuLogo {
@@ -146,6 +146,18 @@ body {
 }
 
 .disclaimer {
-  color: rgb(83, 82, 82);
+  color: #161616;
   margin: unset;
+}
+
+.betaTitle {
+  // background-color: #df8f8f;
+  background-color: #ac0f4b;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 80px;
+  padding: 5px;
+  margin-left: 0.75rem;
+  border-radius: 10px;
 }

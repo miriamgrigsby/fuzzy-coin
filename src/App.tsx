@@ -5,33 +5,28 @@ import axios from 'axios'
 import { ToastContainer } from 'react-toastify'
 import { triggerToast } from './Modules/toast.module'
 import SkeletonTable from './SkeletonTable'
+import ReactTooltip from 'react-tooltip'
 
 export const App = () => {
   const [data, setData] = React.useState<any | null>()
 
-  React.useEffect(() => {
-    const fetch = async () => {
-      try {
-        const fetchedData: any = await axios.get('https://fuzzy-inu-coin.herokuapp.com/api/tokens/')
-        const receivedData: any = fetchedData.data
-        setData(receivedData)
-      } catch (error) {
-        setData(null)
-        triggerToast({
-          description: 'Failed to load data',
-        })
-      }
-    }
-    fetch()
-  }, [])
+  fetch('https://fuzzy-inu-coin.herokuapp.com/api/tokens/')
+    .then((response) => response.json())
+    .then((data) => {
+      setData(data)
+    })
 
   return (
     <>
       <ToastContainer />
+      <ReactTooltip />
       <header className={'header'}>
         <div className="titleContainer">
           <div className="fuzzyInuLogo"></div>
           <span className={'title'}>Fuzzy Tools</span>
+          <sup className="betaTitle" data-tip="V0 Beta Web App">
+            BETA
+          </sup>
         </div>
         <nav className={'headerNavigationContainer'}>
           <button className="mainSiteLink">
@@ -59,7 +54,11 @@ export const App = () => {
             </a>
           </button>
           <button className="mainSiteLink">
-            <a href="https://fuzzy.finance/whitepaper" className="mainLink" style={{ color: 'black' }}>
+            <a
+              href="https://fuzzy.finance/whitepaper"
+              className="mainLink"
+              style={{ color: 'black' }}
+            >
               Whitepaper
             </a>
           </button>
