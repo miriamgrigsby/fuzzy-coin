@@ -7,21 +7,30 @@ import { ColumnResizedEvent, ICellRendererParams } from 'ag-grid-community'
 import 'ag-grid-community/dist/styles/ag-grid.css'
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css'
 
-//Helpers
+// Modules, Utils, Types
 import { MakeIDLink } from './helpers'
-
-//Types
-// import { Company } from '../types'
+import { FuzzyTokensData } from './FuzzyToolsComponents/types'
 
 interface Props extends AgGridReactProps {
-  data: any
+  data: FuzzyTokensData[]
   onColumnResized?: (event: ColumnResizedEvent) => void
 }
 
 const Table: React.FC<Props> = ({ data, onColumnResized }): JSX.Element => {
-  data.map((token: any) => {
+  // const data = [
+  //   {
+  //     tok_name: 'Property',
+  //     tok_symbol: 'RET',
+  //     init_supply: 10000000,
+  //     tok_addr: '0xD295b76e13837618DDAF5AC44Ebe1E7069940D5C',
+  //     dev_addr: '0x5d52ade5eb167aBcAC3780662b1a2a58201Bac2C',
+  //     dep_time: '2021-06-19 14:26:03',
+  //     eip_score: 1,
+  //   },
+  // ]
+  data.map((token: FuzzyTokensData) => {
     const tokenSupply = Number(token.init_supply)
-    token.init_supply = tokenSupply.toExponential(2)
+    return (token.init_supply = tokenSupply.toExponential(2))
   })
   return (
     <div className="ag-theme-alpine">

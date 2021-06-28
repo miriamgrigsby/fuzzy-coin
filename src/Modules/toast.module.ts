@@ -1,10 +1,12 @@
-//Components
+// React
 import { toast } from 'react-toastify'
+
+// Styles
 import 'react-toastify/dist/ReactToastify.css'
 
-//Types
-// import { Toasty } from '../types'
+// Modules, Utils, Types
+import { Toasty } from '../FuzzyToolsComponents/types'
 
-export const triggerToast = (option: any): void => {
+export const triggerToast = (option: Toasty): void => {
   toast(option.description)
 }

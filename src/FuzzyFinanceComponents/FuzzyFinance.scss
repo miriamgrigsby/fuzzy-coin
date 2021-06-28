@@ -1,0 +1,388 @@
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 95vw;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.titleContainer {
+  display: flex;
+  margin-left: 60px;
+  align-items: center;
+}
+
+.betaTitle {
+  background-color: #ac0f4b;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  width: 80px;
+  padding: 5px;
+  margin-left: 0.75rem;
+  border-radius: 10px;
+}
+
+.headerNavigationContainers {
+  height: inherit;
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+
+.mainSiteLinks {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  &:hover {
+    background-color: #a7c4bc;
+  }
+  .mainLink {
+    text-decoration: none;
+  }
+}
+
+.fullCloudContainer {
+  height: 70vh;
+  display: flex;
+}
+
+.leftCloudContainer {
+  width: 45%;
+  padding: 0 32px;
+}
+
+.fuzzyInuHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 62px;
+  align-items: flex-start;
+  margin: unset;
+}
+
+.fuzzyInuHeader {
+  color: #c84b31;
+}
+
+.fuzzyInuHeaderParagraph {
+  text-align: start;
+  color: #a7c4bc;
+  font-size: 20px;
+}
+
+.socialMediaButtonsContainer {
+  display: flex;
+  height: 50px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.dataMediaButtonsContainer {
+  display: flex;
+  height: 65px;
+  width: 65%;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.dataMediaButton {
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataMediaButton.dex {
+  width: 180px;
+  color: #dfeeea;
+  background-color: #c84b31;
+}
+
+.dataMediaButton.uniswap {
+  width: 200px;
+  color: #c84b31;
+  background-color: #dfeeea;
+}
+
+.socialMediaButton {
+  width: 50px;
+}
+
+.socialMediaButton.uniswap {
+  background-image: url('./dexTools.png');
+  background-size: 59px 59px;
+  background-position: right, center;
+  background-repeat: no-repeat;
+}
+
+.socialMediaButton.telegram {
+  background-image: url('./telegram.png');
+  background-size: 55px 55px;
+  background-position: right, center;
+  background-repeat: no-repeat;
+}
+
+.socialMediaButton.twitter {
+  background-image: url('./twitter.png');
+  background-size: 68px 42px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialMediaButton.gecko {
+  background-image: url('./geckoCoin.png');
+  background-size: 59px 59px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialMediaButton.etherscan {
+  background-image: url('./etherscan.png');
+  background-size: 58px 69px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 35px;
+}
+
+.trustedInvestorBanner {
+  height: 365px;
+  background-color: #ffd800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .trustedInvestorBannerHeaderContainer {
+    .trustedInvestorBannerHeader {
+      font-size: 45px;
+      margin: unset;
+    }
+    .trustedInvestorBannerP {
+      color: #2c7873;
+      font-size: 20px;
+    }
+  }
+  .trustedInvestorBannerStatsContainer {
+    height: 100px;
+    display: flex;
+    margin-top: 1rem;
+    width: 45%;
+    justify-content: space-between;
+
+    .trustedInvestorBannerStatsBox {
+      width: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .trustedInvestorBannerStatsBoxSection.large {
+        height: 70%;
+        font-size: 50px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #004445;
+      }
+
+      .trustedInvestorBannerStatsBoxSection.small {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2c7873;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.rightCloudContainer {
+  width: 55%;
+}
+
+@keyframes dodging {
+  0% {
+    margin-top: 20px;
+  }
+
+  50% {
+    margin-top: 125px;
+  }
+  100% {
+    margin-top: 20px;
+  }
+}
+
+.fuzzyRugIcon {
+  width: 60%;
+  height: 40%;
+  background-image: url('./fuzzy_rug.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 25%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  animation-name: dodging;
+}
+
+.overallRoadMapContainer {
+  display: flex;
+  flex-direction: column;
+
+  .overallRoadMapHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+
+    h1 {
+      margin: unset;
+      font-size: 40px;
+    }
+
+    p {
+      color: #a7c4bc;
+      font-size: 20px;
+    }
+  }
+
+  .overallRoadMapContainerInner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .overallRoadMapBox {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+
+      h1 {
+        margin-top: unset;
+        font-size: 40px;
+        color: #c84b31;
+      }
+
+      .phase1 {
+        border-left: 1px solid #ffd800;
+
+        p {
+          margin-top: unset;
+        }
+
+        .roadMapMarker {
+          height: 30px;
+          width: 30px;
+          border-radius: 33px;
+          background-color: #a7c4bc;
+          position: relative;
+          right: 15px;
+        }
+      }
+
+      .phase2 {
+        border-left: 2px solid #004445;
+
+        p {
+          margin-top: unset;
+        }
+
+        .roadMapMarker {
+          height: 30px;
+          width: 30px;
+          border-radius: 33px;
+          background-color: #ffd800;
+          position: relative;
+          right: 15px;
+        }
+      }
+
+      .phase3 {
+        border-left: 2px solid #004445;
+
+        p {
+          margin-top: unset;
+        }
+
+        .roadMapMarker {
+          height: 30px;
+          width: 30px;
+          border-radius: 33px;
+          background-color: #ecdbba;
+          position: relative;
+          right: 15px;
+        }
+      }
+
+      .innerRoadMapBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 1rem;
+
+        ul {
+          height: 100%;
+          margin: unset;
+          flex-direction: column;
+          justify-content: flex-start;
+          display: flex;
+          align-items: flex-start;
+          list-style-type: none;
+          padding-left: unset;
+
+          li {
+            display: flex;
+            text-align: start;
+            font-size: 18px;
+            font-weight: bold;
+            color: #dfeeea;
+          }
+        }
+      }
+
+      .roadMapInnerP {
+        font-size: 16px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+  }
+}
+
+.roadMapLiWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+// .roadMapMarker.first {
+//   position: relative;
+//   top: 25px;
+//   right: 10px;
+// }
