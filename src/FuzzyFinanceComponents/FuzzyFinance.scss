@@ -301,6 +301,9 @@
           background-color: #a7c4bc;
           position: relative;
           right: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 
@@ -318,7 +321,18 @@
           background-color: #ffd800;
           position: relative;
           right: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
+      }
+
+      .roadMapMarker.done {
+        background-color: #a7c4bc;
+      }
+
+      .roadMapMarker.todo {
+        background-color: #ecdbba;
       }
 
       .phase3 {
@@ -380,9 +394,3 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-// .roadMapMarker.first {
-//   position: relative;
-//   top: 25px;
-//   right: 10px;
-// }

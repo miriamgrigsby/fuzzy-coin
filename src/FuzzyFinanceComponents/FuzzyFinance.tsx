@@ -6,8 +6,10 @@ import './FuzzyFinance.scss'
 
 // Components
 import { FuzzyFinanceNavigationButtons } from './FuzzyFinanceNavigationButtons'
+import { faCheck, faClock } from '@fortawesome/free-solid-svg-icons'
 
 // Modules, Utils, Types
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const FuzzyFinance = () => {
   return (
@@ -113,7 +115,7 @@ export const FuzzyFinance = () => {
               <ul>
                 <li className="phase1">
                   <div className="roadMapMarker">
-                    {/* <FontAwesomeIcon icon={['fas', 'fa-check']} /> */}
+                    <FontAwesomeIcon icon={faCheck} color="#5E8B7E" />
                   </div>
                   <div className="roadMapLiWrapper">
                     <p>Deploy Contract</p>
@@ -123,21 +125,27 @@ export const FuzzyFinance = () => {
                   </div>
                 </li>
                 <li className="phase1">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker">
+                    <FontAwesomeIcon icon={faCheck} color="#5E8B7E" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>Add Liquidity</p>
                     <p className="roadMapInnerP">95% of tokens locked into liquidity pool</p>
                   </div>
                 </li>
                 <li className="phase1">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker">
+                    <FontAwesomeIcon icon={faCheck} color="#5E8B7E" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>Lock liquidity for 1 Year</p>
                     <p className="roadMapInnerP">Tokens locked for 1 Year</p>
                   </div>
                 </li>
                 <li className="phase1">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker">
+                    <FontAwesomeIcon icon={faCheck} color="#5E8B7E" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>Renounce Ownership</p>
                     <p className="roadMapInnerP">
@@ -155,7 +163,9 @@ export const FuzzyFinance = () => {
             <div className="innerRoadMapBox">
               <ul>
                 <li className="phase2">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker">
+                    <FontAwesomeIcon icon={faClock} color="#004445" size="lg" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>Crypto Definitions</p>
                     <p className="roadMapInnerP">
@@ -165,7 +175,9 @@ export const FuzzyFinance = () => {
                   </div>
                 </li>
                 <li className="phase2">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker">
+                    <FontAwesomeIcon icon={faClock} color="#004445" size="lg" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>Develop Basic Contract Score Tools</p>
                     <p className="roadMapInnerP">
@@ -175,7 +187,9 @@ export const FuzzyFinance = () => {
                   </div>
                 </li>
                 <li className="phase2">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker">
+                    <FontAwesomeIcon icon={faClock} color="#004445" size="lg" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>Audit</p>
                     <p className="roadMapInnerP">
@@ -185,7 +199,7 @@ export const FuzzyFinance = () => {
                   </div>
                 </li>
                 <li className="phase2">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker todo"></div>
                   <div className="roadMapLiWrapper">
                     <p>Airdrops!! Yes, actual airdrops xD</p>
                     <p className="roadMapInnerP">
@@ -194,7 +208,9 @@ export const FuzzyFinance = () => {
                   </div>
                 </li>
                 <li className="phase2">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker done">
+                    <FontAwesomeIcon icon={faCheck} color="#5E8B7E" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>600 Token Holders</p>
                     <p className="roadMapInnerP">
@@ -203,7 +219,9 @@ export const FuzzyFinance = () => {
                   </div>
                 </li>
                 <li className="phase2">
-                  <div className="roadMapMarker"></div>
+                  <div className="roadMapMarker done">
+                    <FontAwesomeIcon icon={faCheck} color="#5E8B7E" />
+                  </div>
                   <div className="roadMapLiWrapper">
                     <p>1000 Telegram Members</p>
                     <p className="roadMapInnerP">
